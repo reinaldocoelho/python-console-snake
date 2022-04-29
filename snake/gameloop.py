@@ -48,7 +48,7 @@ def start():
         if state == 0:
             step()
         elif state == 1:
-            graphics.drawGameOver()
+            graphics.draw_game_over()
 
 
 def stop():
@@ -61,10 +61,10 @@ def init():
     global state
 
     game.init()
-    graphics.drawGame()
+    graphics.draw_game()
     state = 0
 
 
 def reset():
     game.reset()
-    graphics.drawGame()
+    graphics.draw_game()
